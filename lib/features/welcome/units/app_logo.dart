@@ -1,4 +1,5 @@
-part of'../view.dart';
+part of '../view.dart';
+
 class _AppLogo extends StatelessWidget {
   const _AppLogo({
     Key? key,
@@ -6,8 +7,8 @@ class _AppLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: sizeFromHeight(context, 1.5),
+    return Flexible(
+      flex: 1,
       child: Image.asset(
         'assets/images/Logo.png',
         fit: BoxFit.contain,
