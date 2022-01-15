@@ -1,4 +1,5 @@
-part of'../view.dart';
+part of '../view.dart';
+
 class _SkipButton extends StatelessWidget {
   const _SkipButton({
     Key? key,
@@ -13,7 +14,9 @@ class _SkipButton extends StatelessWidget {
           'Skip For Now',
           style: TextStyle(color: Colors.white),
         ),
-        onPressed: () {},
+        onPressed: () {
+          MagicRouter.navigateAndPopAll(HomeView());
+        },
       ),
     );
   }

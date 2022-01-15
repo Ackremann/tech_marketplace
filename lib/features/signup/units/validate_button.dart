@@ -7,7 +7,7 @@ class _ValidateButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ValidateButton(
+    return WhiteButton(
       text: 'Validate',
       onPressed: () {},
       size: Size(sizeFromWidth(context, 1.5), 40),

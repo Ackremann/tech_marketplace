@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tech_marketplace/constant/colors.dart';
 
-class ValidateButton extends StatelessWidget {
-  const ValidateButton({
+class WhiteButton extends StatelessWidget {
+  const WhiteButton({
     Key? key,
     required this.text,
     required this.onPressed,

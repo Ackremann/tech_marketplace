@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-class AnimatedPageIndicatorFb1 extends StatelessWidget {
-  const AnimatedPageIndicatorFb1(
+class AnimatedPageIndicator extends StatelessWidget {
+  const AnimatedPageIndicator(
       {Key? key,
       required this.currentPage,
       required this.numPages,

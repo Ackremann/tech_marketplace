@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: FlexThemeData.light(scheme: FlexScheme.materialHc),
       darkTheme: FlexThemeData.dark(scheme: FlexScheme.materialHc),
       themeMode: ThemeMode.light,
-      home: OnBoardingView(),
+      home: const SplashView(),
     );
   }
 }

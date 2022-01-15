@@ -10,9 +10,15 @@ class OnboardingCubit extends Cubit<OnboardingState> {
   static OnboardingCubit of(context) => BlocProvider.of(context);
 
   late PageController pageController;
-  int position = 0;
+  int pagePosition = 0;
+  int currentPagePosition = 0;
 
   void onBoardingController() {
     pageController = PageController(initialPage: 0, viewportFraction: 1);
+  }
+
+  void IndicatorPosition(int position) {
+    pagePosition = position;
+    emit(OnboardingIndicatoState());
   }
 }
