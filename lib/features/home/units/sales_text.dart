@@ -9,7 +9,7 @@ class _SaleText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        'Home',
+        'Sale',
         style: Theme.of(context)
             .textTheme
             .headline5!
