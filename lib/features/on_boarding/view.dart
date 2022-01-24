@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tech_marketplace/constant/colors.dart';
 import 'package:tech_marketplace/constant/responsive.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
+import 'package:tech_marketplace/features/bottom_nav/view.dart';
 import 'package:tech_marketplace/features/home/view.dart';
 import 'package:tech_marketplace/features/login/view.dart';
 import 'package:tech_marketplace/features/on_boarding/cubit/onboarding_cubit.dart';
@@ -148,12 +149,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                 _pageController.nextPage(
                     duration: Duration(seconds: 1), curve: Curves.ease);
                 if (_position == 3) {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => HomeView(),
-                    ),
-                  );
+                  MagicRouter.navigateAndPopAll(BottomNavView());
                 }
               },
               child: _position == 3

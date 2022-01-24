@@ -1,6 +1,9 @@
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:tech_marketplace/constant/colors.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
+import 'package:tech_marketplace/features/bottom_nav/view.dart';
 import 'package:tech_marketplace/features/home/view.dart';
 import 'package:tech_marketplace/features/on_boarding/view.dart';
 import 'package:tech_marketplace/features/splash/view.dart';
@@ -16,9 +19,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    //   statusBarBrightness: Brightness.light,
+    // ));
     return MaterialApp(
       navigatorKey: navigatorKey,
       onGenerateRoute: onGenerateRoute,

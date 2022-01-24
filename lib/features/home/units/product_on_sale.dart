@@ -8,14 +8,14 @@ class _ProductOnSaleSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       itemCount: 8,
       gridDelegate:
           const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
       itemBuilder: (context, index) {
         return ProductCard(
-            title: "lap",
+            title: "Surface laptop 3",
             subTitle: '4000',
             image: 'assets/images/Surface laptop.png',
             onTap: () {});

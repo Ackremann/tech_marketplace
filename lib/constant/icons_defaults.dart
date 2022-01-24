@@ -10,6 +10,13 @@ class Defaults {
     Icons.list_outlined,
     Icons.star_border_rounded,
   ];
+  static final bottomNavIcons = [
+    Icons.home_outlined,
+    Icons.search,
+    Icons.shopping_cart_outlined,
+    Icons.account_circle_outlined
+
+  ];
   static final saleImage = [
     'assets/images/Surface laptop.png',
     'assets/images/Surface laptop.png',

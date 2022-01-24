@@ -10,7 +10,7 @@ import 'package:tech_marketplace/widgets/sort_card.dart';
 part 'units/home_page_view.dart';
 part 'units/home_page_view_indicator.dart';
 part 'units/home_text.dart';
-part 'units/bottom_nav_bar.dart';
+// part 'units/bottom_nav_bar.dart';
 part 'units/sort_section.dart';
 part 'units/sales_text.dart';
 part 'units/product_on_sale.dart';
@@ -20,16 +20,15 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: ListView(
-            shrinkWrap: true,
-
-            // crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _HomeText(),
+    return CustomScrollView(
+      slivers: [
+        const SliverAppBar(
+          backgroundColor: Colors.white,
+          title: _HomeText(),
+        ),
+        SliverToBoxAdapter(
+          child: Column(
+            children: const [
               _HomePageView(),
               _HomePageViewIndicator(),
               _SortSection(),
@@ -38,8 +37,31 @@ class HomeView extends StatelessWidget {
             ],
           ),
         ),
-      ),
-      bottomNavigationBar: const _BottomNavBar(),
+      ],
     );
+    // bottomNavigationBar: const _BottomNavBar(),
   }
 }
+
+
+// return Scaffold(
+//       body: SafeArea(
+//         child: Padding(
+//           padding: const EdgeInsets.symmetric(horizontal: 10),
+//           child: ListView(
+//             shrinkWrap: true,
+
+//             // crossAxisAlignment: CrossAxisAlignment.start,
+//             children: [
+//               _HomeText(),
+//               _HomePageView(),
+//               _HomePageViewIndicator(),
+//               _SortSection(),
+//               _SaleText(),
+//               _ProductOnSaleSection(),
+//             ],
+//           ),
+//         ),
+//       ),
+//       bottomNavigationBar: const _BottomNavBar(),
+//     );

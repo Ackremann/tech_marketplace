@@ -7,7 +7,8 @@ class _HomePageView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Container(
         height: sizeFromHeight(context, 5),
         child: PageView.builder(
