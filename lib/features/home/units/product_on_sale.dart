@@ -7,24 +7,37 @@ class _ProductOnSaleSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: sizeFromHeight(context, 2.5),
-      child: ListView(
-        scrollDirection: Axis.horizontal,
-        children: [
-          ProductCard(
-              title: "lap",
-              subTitle: '4000',
-              image: 'assets/images/Surface laptop.png',
-              onTap: () {}),
-          ProductCard(
-            title: "lap agmed",
-            subTitle: '4001',
+    return GridView.builder(
+      physics: NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
+      itemCount: 8,
+      gridDelegate:
+          const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+      itemBuilder: (context, index) {
+        return ProductCard(
+            title: "lap",
+            subTitle: '4000',
             image: 'assets/images/Surface laptop.png',
-            onTap: () {},
-          ),
-        ],
-      ),
+            onTap: () {});
+      },
     );
   }
 }
+
+
+
+
+//  return Expanded(
+//       child: GridView.builder(
+//         itemCount: 8,
+//         gridDelegate:
+//             const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+//         itemBuilder: (context, index) {
+//           return ProductCard(
+//               title: "lap",
+//               subTitle: '4000',
+//               image: 'assets/images/Surface laptop.png',
+//               onTap: () {});
+//         },
+//       ),
+//     );

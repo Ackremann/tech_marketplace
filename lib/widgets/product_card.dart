@@ -9,7 +9,10 @@ class ProductCard extends StatelessWidget {
   final Function() onTap;
   // final bool selected;
   const ProductCard(
-      {required this.title, required this.image, required this.onTap, required this.subTitle,
+      {required this.title,
+      required this.image,
+      required this.onTap,
+      required this.subTitle,
       Key? key})
       : super(key: key);
 
@@ -21,8 +24,8 @@ class ProductCard extends StatelessWidget {
         onTap: onTap,
         child: Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(25),
-            color: Color(0xffFDFEFF),
+            borderRadius: BorderRadius.circular(10),
+            color: Colors.grey[100],
           ),
           width: sizeFromWidth(context, 2.5),
           child: Column(

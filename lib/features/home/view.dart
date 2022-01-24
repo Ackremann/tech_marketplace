@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tech_marketplace/constant/Icons_defaults.dart';
 import 'package:tech_marketplace/constant/colors.dart';
+import 'package:tech_marketplace/constant/icons_defaults.dart';
 import 'package:tech_marketplace/constant/responsive.dart';
+import 'package:tech_marketplace/core/routes/magic_router.dart';
+import 'package:tech_marketplace/features/catagories/select_view.dart';
 import 'package:tech_marketplace/widgets/page_indiactor.dart';
 import 'package:tech_marketplace/widgets/product_card.dart';
 import 'package:tech_marketplace/widgets/sort_card.dart';
@@ -20,20 +22,20 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                _HomeText(),
-                _HomePageView(),
-                _HomePageViewIndicator(),
-                _SortSection(),
-                _SaleText(),
-                _ProductOnSaleSection(),
-              ],
-            ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: ListView(
+            shrinkWrap: true,
+
+            // crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _HomeText(),
+              _HomePageView(),
+              _HomePageViewIndicator(),
+              _SortSection(),
+              _SaleText(),
+              _ProductOnSaleSection(),
+            ],
           ),
         ),
       ),

@@ -8,7 +8,7 @@ class _HomeText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8),
+      padding: const EdgeInsets.all(15),
       child: Text(
         'Home',
         style: Theme.of(context)

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class IconsDefaults {
+class Defaults {
   static final sortText = [
     'Categories',
     'Favorites',
@@ -12,17 +12,37 @@ class IconsDefaults {
   ];
   static final saleImage = [
     'assets/images/Surface laptop.png',
-        'assets/images/Surface laptop.png',
-        'assets/images/Surface laptop.png',
+    'assets/images/Surface laptop.png',
+    'assets/images/Surface laptop.png',
   ];
   static final saleTitle = [
     'Surface laptop',
-        'Surface laptop gamed',
-        'Surface laptop agmed',
+    'Surface laptop gamed',
+    'Surface laptop agmed',
   ];
   static final salePrice = [
     '20',
-        '200',
-        '3000',
+    '200',
+    '3000',
+  ];
+  static final catagoriesList = [
+    'Lap',
+    'phone',
+    'tv',
+    'Lap',
+    'phone',
+    'tv',
+    'Lap',
+    'phone',
+    'tv',
+    'Lap',
+    'phone',
+    'tv',
+    'Lap',
+    'phone',
+    'tv',
+    'Lap',
+    'phone',
+    'tv',
   ];
 }
