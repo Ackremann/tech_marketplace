@@ -13,13 +13,11 @@ class BottomNavView extends StatelessWidget {
     return BlocProvider(
       create: (context) => BottomNavCubit(),
       child: Scaffold(
-        body: SafeArea(
-          child: BlocBuilder<BottomNavCubit, BottomNavState>(
-            builder: (context, state) {
-              final cubit = BottomNavCubit().of(context);
-              return cubit.bottomNavBatViews[cubit.bottomNavBarIndex];
-            },
-          ),
+        body: BlocBuilder<BottomNavCubit, BottomNavState>(
+          builder: (context, state) {
+            final cubit = BottomNavCubit().of(context);
+            return cubit.bottomNavBatViews[cubit.bottomNavBarIndex];
+          },
         ),
         bottomNavigationBar: const _BottomNavBar(),
       ),

@@ -8,44 +8,63 @@ class CatagoriesSelectView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'Catagories',
-                style: Theme.of(context).textTheme.headline4,
+    return SafeArea(
+      child: Scaffold(
+        body: CustomScrollView(
+          slivers: [
+            SliverAppBar(
+              floating: true,
+              backgroundColor: Colors.white,
+              leading: IconButton(
+                onPressed: () {
+                  MagicRouter.pop();
+                },
+                icon: Icon(
+                  Icons.arrow_back,
+                  color: Colors.black,
+                  size: 30,
+                ),
               ),
             ),
-            Expanded(
-              child: ListView.builder(
-                itemCount: Defaults.catagoriesList.length,
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onDoubleTap: () {
-                      MagicRouter.navigateTo(CatagoriesView());
-                    },
-                    child: Container(
-                      margin: const EdgeInsets.symmetric(
-                          vertical: 5, horizontal: 10),
-                      padding: const EdgeInsets.all(20),
-                      decoration: BoxDecoration(
-                        color: Colors.grey[50],
-                      ),
-                      child: Text(
-                        Defaults.catagoriesList[index],
-                        style: Theme.of(context).textTheme.headline6,
-                      ),
+            SliverToBoxAdapter(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                    child: Text(
+                      'Catagories',
+                      style: Theme.of(context).textTheme.headline4,
                     ),
-                  );
-                },
+                  ),
+                  ListView.builder(
+                    shrinkWrap: true,
+                    physics: NeverScrollableScrollPhysics(),
+                    itemCount: Defaults.catagoriesList.length,
+                    itemBuilder: (context, index) {
+                      return GestureDetector(
+                        onTap: () {
+                          MagicRouter.navigateTo(CatagoriesView());
+                        },
+                        child: Container(
+                          margin: const EdgeInsets.symmetric(
+                              vertical: 5, horizontal: 10),
+                          padding: const EdgeInsets.all(20),
+                          decoration: BoxDecoration(
+                            color: Colors.grey[50],
+                          ),
+                          child: Text(
+                            Defaults.catagoriesList[index],
+                            style: Theme.of(context).textTheme.headline6,
+                          ),
+                        ),
+                      );
+                    },
+                  )
+                ],
               ),
-            )
+            ),
           ],
         ),
       ),

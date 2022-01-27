@@ -21,16 +21,14 @@ class WelcomeView extends StatelessWidget {
         width: sizeFromWidth(context, 1),
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(gradient: AppColors.lightDarkGradient),
-        child: SafeArea(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              _AppName(),
-              _AppLogo(),
-              _StartButton(),
-              _SkipButton(),
-            ],
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            _AppName(),
+            _AppLogo(),
+            _StartButton(),
+            _SkipButton(),
+          ],
         ),
       ),
     );

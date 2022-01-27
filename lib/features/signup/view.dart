@@ -25,18 +25,16 @@ class SignUpView extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: AppColors.lightDarkGradient,
         ),
-        child: SafeArea(
-          child: SingleChildScrollView(
-            child: Center(
-              child: Column(
-                children: const [
-                  _SignUpText(),
-                  _SignUpFields(),
-                  _ValidateButton(),
-                  _LogInRow(),
-                  _SkipButton(),
-                ],
-              ),
+        child: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: const [
+                _SignUpText(),
+                _SignUpFields(),
+                _ValidateButton(),
+                _LogInRow(),
+                _SkipButton(),
+              ],
             ),
           ),
         ),

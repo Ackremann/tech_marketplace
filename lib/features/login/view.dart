@@ -27,18 +27,16 @@ class LogInview extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: AppColors.lightDarkGradient,
         ),
-        child: SafeArea(
-          child: SingleChildScrollView(
-            child: Center(
-              child: Column(
-                children: const [
-                   _LogInText(),
-                   _LogInFields(),
-                   _ValidateButton(),
-                   _SignUpRow(),
-                   _SkipButton(),
-                ],
-              ),
+        child: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: const [
+                 _LogInText(),
+                 _LogInFields(),
+                 _ValidateButton(),
+                 _SignUpRow(),
+                 _SkipButton(),
+              ],
             ),
           ),
         ),
