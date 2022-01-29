@@ -29,6 +29,7 @@ class AddToCart extends StatelessWidget {
               ),
             ),
             WhiteButton(
+              elevation: 10,
               text: 'Go to cart',
               onPressed: () {},
               size: Size(sizeFromWidth(context, 1.3), 40),
