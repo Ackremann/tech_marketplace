@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:tech_marketplace/constant/colors.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
 import 'package:tech_marketplace/features/bottom_nav/view.dart';
+import 'package:tech_marketplace/features/cart/view.dart';
 import 'package:tech_marketplace/features/home/view.dart';
 import 'package:tech_marketplace/features/on_boarding/view.dart';
 import 'package:tech_marketplace/features/splash/view.dart';
@@ -11,6 +12,7 @@ import 'package:tech_marketplace/features/welcome/view.dart';
 import 'package:tech_marketplace/widgets/cart_added.dart';
 
 import 'features/details/view.dart';
+import 'features/favorite/view.dart';
 import 'features/signup/view.dart';
 
 void main() {
@@ -22,15 +24,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    //   statusBarBrightness: Brightness.light,
-    // ));
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(
+        statusBarIconBrightness: Brightness.dark,
+        statusBarColor: Colors.white,
+      ),
+    );
     return MaterialApp(
       builder: (context, child) => SafeArea(child: child!),
       navigatorKey: navigatorKey,
       onGenerateRoute: onGenerateRoute,
       debugShowCheckedModeBanner: false,
-      theme: FlexThemeData.light(scheme: FlexScheme.materialHc),
+      theme: FlexThemeData.light(scheme: FlexScheme.materialHc).copyWith(
+          appBarTheme: const AppBarTheme(backgroundColor: Colors.white)),
       darkTheme: FlexThemeData.dark(scheme: FlexScheme.materialHc),
       themeMode: ThemeMode.light,
       home: const SplashView(),

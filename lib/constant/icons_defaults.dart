@@ -15,7 +15,6 @@ class Defaults {
     Icons.search,
     Icons.shopping_cart_outlined,
     Icons.account_circle_outlined
-
   ];
   static final saleImage = [
     'assets/images/Surface laptop.png',
@@ -51,5 +50,37 @@ class Defaults {
     'Lap',
     'phone',
     'tv',
+  ];
+  static final favoriteItem = [
+    {
+      'image': 'assets/images/Surface laptop.png',
+      'name': 'Google Home mini',
+      'price': 'USD 49'
+    },
+    {
+      'image': 'assets/images/Surface laptop.png',
+      'name': 'Google Home mini',
+      'price': 'USD 49'
+    },
+    {
+      'image': 'assets/images/Surface laptop.png',
+      'name': 'Google Home mini',
+      'price': 'USD 49'
+    },
+    {
+      'image': 'assets/images/Surface laptop.png',
+      'name': 'Google Home mini',
+      'price': 'USD 49'
+    },
+    {
+      'image': 'assets/images/Surface laptop.png',
+      'name': 'Google Home mini',
+      'price': 'USD 49'
+    },
+    {
+      'image': 'assets/images/Surface laptop.png',
+      'name': 'Google Home mini',
+      'price': 'USD 49'
+    },
   ];
 }
