@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:tech_marketplace/constant/icons_defaults.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
+import 'package:tech_marketplace/widgets/view_title.dart';
 part 'units/favorite_title.dart';
 
 class FavoriteVeiw extends StatelessWidget {

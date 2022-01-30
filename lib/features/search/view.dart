@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tech_marketplace/widgets/search_bar.dart';
-part 'units/search_text.dart';
+import 'package:tech_marketplace/widgets/view_title.dart';
+part 'units/search_title.dart';
 
 class SearchView extends StatelessWidget {
   const SearchView({Key? key}) : super(key: key);

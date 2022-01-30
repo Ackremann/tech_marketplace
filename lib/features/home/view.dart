@@ -7,9 +7,10 @@ import 'package:tech_marketplace/features/catagories/select_view.dart';
 import 'package:tech_marketplace/widgets/page_indiactor.dart';
 import 'package:tech_marketplace/widgets/product_card.dart';
 import 'package:tech_marketplace/widgets/sort_card.dart';
+import 'package:tech_marketplace/widgets/view_title.dart';
 part 'units/home_page_view.dart';
 part 'units/home_page_view_indicator.dart';
-part 'units/home_text.dart';
+part 'units/home_title.dart';
 // part 'units/bottom_nav_bar.dart';
 part 'units/sort_section.dart';
 part 'units/sales_text.dart';
@@ -24,7 +25,7 @@ class HomeView extends StatelessWidget {
       slivers: [
         const SliverAppBar(
           backgroundColor: Colors.white,
-          title: _HomeText(),
+          title:_HomeTitle(),
         ),
         SliverToBoxAdapter(
           child: Column(

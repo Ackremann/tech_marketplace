@@ -4,6 +4,7 @@ import 'package:tech_marketplace/constant/colors.dart';
 import 'package:tech_marketplace/constant/responsive.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
 import 'package:tech_marketplace/widgets/page_indiactor.dart';
+import 'package:tech_marketplace/widgets/view_title.dart';
 part 'units/product_name.dart';
 part 'units/product_sale.dart';
 part 'units/product_image_indiactor.dart';

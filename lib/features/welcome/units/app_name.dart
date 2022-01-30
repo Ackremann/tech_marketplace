@@ -1,21 +1,22 @@
-part of'../view.dart';
+part of '../view.dart';
+
 class _AppName extends StatelessWidget {
-  const _AppName({ Key? key }) : super(key: key);
+  const _AppName({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [
-         Text(
-                'lATECH',
-                style: TextStyle(fontSize: 24, color: Colors.white),
-              ),
-               Text(
-                'TECH MARKET',
-                style: TextStyle(color: Colors.white, letterSpacing: 6),
-              ),
+      children: [
+        Text(
+          'lATECH',
+          style: TextStyle(fontSize: 24, color: Theme.of(context).primaryColor),
+        ),
+        Text(
+          'TECH MARKET',
+          style: TextStyle(
+              color: Theme.of(context).primaryColor, letterSpacing: 6),
+        ),
       ],
-      
     );
   }
 }

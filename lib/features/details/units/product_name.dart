@@ -7,12 +7,9 @@ class _ProductName extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      'Home',
-      style: Theme.of(context)
-          .textTheme
-          .headline4!
-          .copyWith(color: Colors.black, fontWeight: FontWeight.bold),
+    return const ViewTitle(
+      title: 'iphone 13',
+      padding: 0,
     );
   }
 }

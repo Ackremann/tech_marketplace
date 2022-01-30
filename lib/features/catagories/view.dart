@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tech_marketplace/constant/icons_defaults.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
 import 'package:tech_marketplace/widgets/product_card.dart';
+import 'package:tech_marketplace/widgets/view_title.dart';
 
 class CatagoriesView extends StatelessWidget {
   const CatagoriesView({Key? key}) : super(key: key);
@@ -29,13 +30,9 @@ class CatagoriesView extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-                  child: Text(
-                    'Catagories',
-                    style: Theme.of(context).textTheme.headline4,
-                  ),
+                const ViewTitle(
+                  title: 'Catagories',
+                  padding: 20,
                 ),
                 GridView.builder(
                   physics: NeverScrollableScrollPhysics(),

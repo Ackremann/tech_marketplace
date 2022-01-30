@@ -8,7 +8,7 @@ class AppColors {
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
     colors: [
-      textAccent2,
+      Colors.white,
       mainBackGroundColor,
     ],
   );

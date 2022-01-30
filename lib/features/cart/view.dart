@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tech_marketplace/constant/icons_defaults.dart';
 import 'package:tech_marketplace/constant/responsive.dart';
+import 'package:tech_marketplace/widgets/view_title.dart';
 part 'units/cart_title.dart';
 
 class CartView extends StatelessWidget {
