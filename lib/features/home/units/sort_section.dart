@@ -16,13 +16,15 @@ class _SortSection extends StatelessWidget {
             icon: Icon(Defaults.sortICons[0]),
             title: Defaults.sortText[0],
             onTap: () {
-              MagicRouter.navigateTo(CatagoriesSelectView());
+              MagicRouter.navigateTo(const CatagoriesSelectView());
             },
           ),
           SortCard(
             icon: Icon(Defaults.sortICons[1]),
             title: Defaults.sortText[1],
-            onTap: () {},
+            onTap: () {
+              MagicRouter.navigateTo(const FavoriteVeiw());
+            },
           ),
         ],
       ),

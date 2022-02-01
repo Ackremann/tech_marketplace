@@ -14,7 +14,7 @@ class CartView extends StatelessWidget {
         children: [
           CustomScrollView(
             slivers: [
-              SliverAppBar(
+              const SliverAppBar(
                 title: _CartTitle(),
               ),
               SliverToBoxAdapter(

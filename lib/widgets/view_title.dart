@@ -18,7 +18,7 @@ class ViewTitle extends StatelessWidget {
         style: Theme.of(context)
             .textTheme
             .headline4!
-            .copyWith(fontWeight: FontWeight.bold, fontSize: 30),
+            .copyWith(fontWeight: FontWeight.bold, fontSize: 26),
       ),
     );
   }

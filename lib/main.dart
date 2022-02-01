@@ -6,6 +6,7 @@ import 'package:tech_marketplace/core/routes/magic_router.dart';
 import 'package:tech_marketplace/features/bottom_nav/view.dart';
 import 'package:tech_marketplace/features/cart/view.dart';
 import 'package:tech_marketplace/features/check_out/view.dart';
+import 'package:tech_marketplace/features/credit/view.dart';
 import 'package:tech_marketplace/features/home/view.dart';
 import 'package:tech_marketplace/features/on_boarding/view.dart';
 import 'package:tech_marketplace/features/splash/view.dart';
@@ -26,10 +27,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(
-        statusBarIconBrightness: Brightness.dark,
-        statusBarColor: Colors.white,
-      ),
+      const SystemUiOverlayStyle(
+          statusBarIconBrightness: Brightness.dark,
+          statusBarColor: Colors.white),
     );
     return MaterialApp(
       builder: (context, child) => SafeArea(child: child!),
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
           appBarTheme: const AppBarTheme(backgroundColor: Colors.white)),
       darkTheme: FlexThemeData.dark(scheme: FlexScheme.materialHc),
       themeMode: ThemeMode.light,
-      home: const CheckOutView(),
+      home: const CreditCardView(),
     );
   }
 }

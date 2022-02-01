@@ -23,11 +23,11 @@ class AppTextField extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          width: sizeFromWidth(context, 1.5),
+        SizedBox(
+          // width: sizeFromWidth(context, 1.5),
           height: 40,
           child: TextFormField(
-            onSaved: onSaved,
+            onSaved: onSaved,   
             validator: validator,
             keyboardType: keyboardType,
             style: const TextStyle(fontSize: 12, color: Colors.white),

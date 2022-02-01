@@ -4,6 +4,7 @@ import 'package:tech_marketplace/constant/icons_defaults.dart';
 import 'package:tech_marketplace/constant/responsive.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
 import 'package:tech_marketplace/features/catagories/select_view.dart';
+import 'package:tech_marketplace/features/favorite/view.dart';
 import 'package:tech_marketplace/widgets/page_indiactor.dart';
 import 'package:tech_marketplace/widgets/product_card.dart';
 import 'package:tech_marketplace/widgets/sort_card.dart';
