@@ -29,9 +29,14 @@ class _HomePageView extends StatelessWidget {
                     'Bose Home Speaker',
                     style: TextStyle(color: Colors.white),
                   ),
-                  subtitle:
-                      Text('USD 279', style: TextStyle(color: Colors.white)),
-                  trailing: Icon(Icons.circle_outlined, color: Colors.white),
+                  subtitle: Text(
+                    'USD 279',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  trailing: Icon(
+                    Icons.circle_outlined,
+                    color: Colors.white,
+                  ),
                 ),
               ),
             );

@@ -4,6 +4,7 @@ import 'package:tech_marketplace/constant/icons_defaults.dart';
 import 'package:tech_marketplace/constant/responsive.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
 import 'package:tech_marketplace/features/catagories/select_view.dart';
+import 'package:tech_marketplace/features/details/view.dart';
 import 'package:tech_marketplace/features/favorite/view.dart';
 import 'package:tech_marketplace/widgets/page_indiactor.dart';
 import 'package:tech_marketplace/widgets/product_card.dart';
@@ -46,24 +47,3 @@ class HomeView extends StatelessWidget {
 }
 
 
-// return Scaffold(
-//       body: SafeArea(
-//         child: Padding(
-//           padding: const EdgeInsets.symmetric(horizontal: 10),
-//           child: ListView(
-//             shrinkWrap: true,
-
-//             // crossAxisAlignment: CrossAxisAlignment.start,
-//             children: [
-//               _HomeText(),
-//               _HomePageView(),
-//               _HomePageViewIndicator(),
-//               _SortSection(),
-//               _SaleText(),
-//               _ProductOnSaleSection(),
-//             ],
-//           ),
-//         ),
-//       ),
-//       bottomNavigationBar: const _BottomNavBar(),
-//     );

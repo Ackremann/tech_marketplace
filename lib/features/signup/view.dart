@@ -4,6 +4,7 @@ import 'package:tech_marketplace/constant/responsive.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
 import 'package:tech_marketplace/features/home/view.dart';
 import 'package:tech_marketplace/features/login/view.dart';
+import 'package:tech_marketplace/features/on_boarding/view.dart';
 import 'package:tech_marketplace/widgets/app_text_fields.dart';
 import 'package:tech_marketplace/widgets/text_button_row.dart';
 import 'package:tech_marketplace/widgets/white_button.dart';

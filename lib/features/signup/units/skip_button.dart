@@ -15,7 +15,7 @@ class _SkipButton extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
         onPressed: () {
-          MagicRouter.navigateAndPopAll(HomeView());
+          MagicRouter.navigateAndPopAll(const OnBoardingView());
         },
       ),
     );

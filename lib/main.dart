@@ -1,6 +1,7 @@
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:tech_marketplace/constant/colors.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
 import 'package:tech_marketplace/features/bottom_nav/view.dart';
@@ -37,11 +38,14 @@ class MyApp extends StatelessWidget {
       navigatorKey: navigatorKey,
       onGenerateRoute: onGenerateRoute,
       debugShowCheckedModeBanner: false,
-      theme: FlexThemeData.light(scheme: FlexScheme.materialHc).copyWith(
-          appBarTheme: const AppBarTheme(backgroundColor: Colors.white)),
+      theme: FlexThemeData.light(
+        scheme: FlexScheme.materialHc,
+        appBarBackground: Colors.white,
+        textTheme: GoogleFonts.sourceSansProTextTheme(),
+      ),
       darkTheme: FlexThemeData.dark(scheme: FlexScheme.materialHc),
       themeMode: ThemeMode.light,
-      home: const CreditCardView(),
+      home: const SplashView(),
     );
   }
 }

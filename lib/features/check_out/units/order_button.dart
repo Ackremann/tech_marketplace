@@ -1,4 +1,5 @@
-part of'../view.dart';
+part of '../view.dart';
+
 class _OrderButton extends StatelessWidget {
   const _OrderButton({
     Key? key,
@@ -10,7 +11,9 @@ class _OrderButton extends StatelessWidget {
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
             fixedSize: Size(sizeFromWidth(context, 1.2), 40)),
-        onPressed: () {},
+        onPressed: () {
+          MagicRouter.navigateTo(const CreditCardView());
+        },
         child: const Text('Complete Order'),
       ),
     );

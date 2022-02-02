@@ -1,6 +1,6 @@
 part of '../view.dart';
 
-class _PayButton extends StatelessWidget {
+class   _PayButton extends StatelessWidget {
   const _PayButton({
     Key? key,
   }) : super(key: key);
@@ -11,7 +11,8 @@ class _PayButton extends StatelessWidget {
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
             fixedSize: Size(sizeFromWidth(context, 1.2), 40)),
-        onPressed: () {
+        onPressed: () async {
+          // MagicRouter.pop();
           Navigator.of(context).push(PageRouteBuilder(
             opaque: false,
             pageBuilder: (context, animation, secondaryAnimation) =>

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tech_marketplace/constant/icons_defaults.dart';
 import 'package:tech_marketplace/constant/responsive.dart';
+import 'package:tech_marketplace/core/routes/magic_router.dart';
+import 'package:tech_marketplace/features/check_out/view.dart';
 import 'package:tech_marketplace/widgets/view_title.dart';
 part 'units/cart_title.dart';
 
@@ -106,7 +108,7 @@ class CartView extends StatelessWidget {
                     )
                   ],
                 ),
-              )
+              ),
             ],
           ),
           Positioned(
@@ -132,8 +134,10 @@ class CartView extends StatelessWidget {
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           fixedSize: Size(sizeFromWidth(context, 1.2), 40)),
-                      onPressed: () {},
-                      child: Text('Complete Order'))
+                      onPressed: () {
+                        MagicRouter.navigateTo(const CheckOutView());
+                      },
+                      child: const Text('Complete Order'))
                 ],
               ),
             ),

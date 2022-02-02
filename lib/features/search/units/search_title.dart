@@ -1,7 +1,7 @@
 part of '../view.dart';
 
-class _SearchText extends StatelessWidget {
-  const _SearchText({
+class _SearchTitle extends StatelessWidget {
+  const _SearchTitle({
     Key? key,
   }) : super(key: key);
 

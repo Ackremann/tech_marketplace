@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:tech_marketplace/constant/colors.dart';
 import 'package:tech_marketplace/constant/responsive.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
+import 'package:tech_marketplace/widgets/cart_added.dart';
 import 'package:tech_marketplace/widgets/page_indiactor.dart';
 import 'package:tech_marketplace/widgets/view_title.dart';
 part 'units/product_name.dart';
@@ -23,7 +24,7 @@ class DetailsView extends StatelessWidget {
           onPressed: () {
             MagicRouter.pop();
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Colors.black,
             size: 30,
@@ -71,8 +72,10 @@ class _CartAndFaivorateButtons extends StatelessWidget {
               40,
             ),
           ),
-          onPressed: () {},
-          child: Text('Add to cart'),
+          onPressed: () {
+            MagicRouter.navigateTo(const AddToCart());
+          },
+          child: const Text('Add to cart'),
         ),
         IconButton(
           iconSize: 30,

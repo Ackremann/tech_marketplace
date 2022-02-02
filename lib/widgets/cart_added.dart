@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tech_marketplace/constant/responsive.dart';
+import 'package:tech_marketplace/core/routes/magic_router.dart';
+import 'package:tech_marketplace/features/cart/view.dart';
 import 'package:tech_marketplace/widgets/white_button.dart';
 
 class AddToCart extends StatelessWidget {
@@ -14,8 +16,8 @@ class AddToCart extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(20),
+            const Padding(
+              padding: EdgeInsets.all(20),
               child: Icon(
                 Icons.shopping_cart_outlined,
                 size: 70,
@@ -31,13 +33,17 @@ class AddToCart extends StatelessWidget {
             WhiteButton(
               elevation: 10,
               text: 'Go to cart',
-              onPressed: () {},
+              onPressed: () {
+                MagicRouter.navigateTo(const CartView());
+              },
               size: Size(sizeFromWidth(context, 1.3), 40),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                   fixedSize: Size(sizeFromWidth(context, 1.3), 40)),
-              onPressed: () {},
+              onPressed: () {
+                MagicRouter.pop();
+              },
               child: Text(
                 'Back to shopping',
               ),

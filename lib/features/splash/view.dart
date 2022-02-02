@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:tech_marketplace/constant/colors.dart';
 import 'package:tech_marketplace/constant/responsive.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
-import 'package:tech_marketplace/features/on_boarding/view.dart';
 import 'package:tech_marketplace/features/welcome/view.dart';
 
 class SplashView extends StatefulWidget {

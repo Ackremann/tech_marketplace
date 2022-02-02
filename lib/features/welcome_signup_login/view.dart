@@ -5,15 +5,19 @@ import 'package:tech_marketplace/constant/responsive.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
 import 'package:tech_marketplace/features/bottom_nav/view.dart';
 import 'package:tech_marketplace/features/home/view.dart';
+import 'package:tech_marketplace/features/login/view.dart';
 import 'package:tech_marketplace/features/on_boarding/view.dart';
+import 'package:tech_marketplace/features/signup/view.dart';
+import 'package:tech_marketplace/widgets/text_button_row.dart';
 import 'package:tech_marketplace/widgets/white_button.dart';
 part 'units/app_name.dart';
 part 'units/app_logo.dart';
 part 'units/start_button.dart';
 part 'units/skip_button.dart';
+part 'units/login_button.dart';
 
-class WelcomeView extends StatelessWidget {
-  const WelcomeView({Key? key}) : super(key: key);
+class Welcome2View extends StatelessWidget {
+  const Welcome2View({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +32,7 @@ class WelcomeView extends StatelessWidget {
             _AppName(),
             _AppLogo(),
             _StartButton(),
+            _LoginButtonRow(),
             _SkipButton(),
           ],
         ),

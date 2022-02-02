@@ -18,7 +18,7 @@ class _ProductOnSaleSection extends StatelessWidget {
             title: "Surface laptop 3",
             subTitle: '4000',
             image: 'assets/images/Surface laptop.png',
-            onTap: () {});
+            onTap: () => MagicRouter.navigateTo(const DetailsView()));
       },
     );
   }
