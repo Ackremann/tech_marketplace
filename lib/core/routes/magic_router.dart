@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
@@ -12,6 +14,7 @@ class MagicRouter {
 
   static Future<dynamic> navigateAndPopAll(Widget page) =>
       navigatorKey.currentState!.pushAndRemoveUntil(
+        
         _materialPageRoute(page),
         (_) => false,
       );

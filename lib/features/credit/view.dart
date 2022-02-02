@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:tech_marketplace/constant/responsive.dart';
 import 'package:tech_marketplace/core/routes/magic_router.dart';
+import 'package:tech_marketplace/features/order_validate/view.dart';
 import 'package:tech_marketplace/widgets/app_text_fields.dart';
 import 'package:tech_marketplace/widgets/view_title.dart';
 part 'units/cost_calc.dart';
@@ -41,8 +42,10 @@ class CreditCardView extends StatelessWidget {
                     child: Text('Card Number'),
                   ),
                   AppTextField(
+                    hint: 'xxx-xxx-xxx-xxx',
+                    backgroundColor: Colors.black,
+                    textColor: Colors.black,
                     keyboardType: TextInputType.number,
-                    label: 'xxx-xxx-xxx-xxx',
                     onSaved: (s) {},
                     validator: (v) {},
                   ),
@@ -61,8 +64,10 @@ class CreditCardView extends StatelessWidget {
                                 child: Text('Card Number'),
                               ),
                               AppTextField(
+                                hint: 'mm/yy',
+                                backgroundColor: Colors.black,
+                                textColor: Colors.black,
                                 keyboardType: TextInputType.number,
-                                label: 'xxx-xxx-xxx-xxx',
                                 onSaved: (s) {},
                                 validator: (v) {},
                               ),
@@ -79,8 +84,10 @@ class CreditCardView extends StatelessWidget {
                                 child: Text('Card Number'),
                               ),
                               AppTextField(
+                                hint: 'xxx',
+                                backgroundColor: Colors.black,
+                                textColor: Colors.black,
                                 keyboardType: TextInputType.number,
-                                label: 'xxx-xxx-xxx-xxx',
                                 onSaved: (s) {},
                                 validator: (v) {},
                               ),

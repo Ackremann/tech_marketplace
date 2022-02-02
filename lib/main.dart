@@ -9,6 +9,7 @@ import 'package:tech_marketplace/features/check_out/view.dart';
 import 'package:tech_marketplace/features/credit/view.dart';
 import 'package:tech_marketplace/features/home/view.dart';
 import 'package:tech_marketplace/features/on_boarding/view.dart';
+import 'package:tech_marketplace/features/order_validate/view.dart';
 import 'package:tech_marketplace/features/splash/view.dart';
 import 'package:tech_marketplace/features/welcome/view.dart';
 import 'package:tech_marketplace/widgets/cart_added.dart';

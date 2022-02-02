@@ -11,14 +11,14 @@ class _SignUpFields extends StatelessWidget {
           padding: EdgeInsets.symmetric(vertical: sizeFromHeight(context, 35)),
           child: AppTextField(
             keyboardType: TextInputType.name,
-            label: 'Full name',
+            hint: 'Full name',
             onSaved: (v) {},
             validator: (v) {},
           ),
         ),
         AppTextField(
           keyboardType: TextInputType.name,
-          label: 'Email',
+          hint: 'Email',
           onSaved: (v) {},
           validator: (v) {},
         ),
@@ -26,7 +26,7 @@ class _SignUpFields extends StatelessWidget {
           padding: EdgeInsets.symmetric(vertical: sizeFromHeight(context, 35)),
           child: AppTextField(
             keyboardType: TextInputType.name,
-            label: 'Password',
+            hint: 'Password',
             onSaved: (v) {},
             validator: (v) {},
           ),
@@ -35,7 +35,7 @@ class _SignUpFields extends StatelessWidget {
           padding: EdgeInsets.only(bottom: sizeFromHeight(context, 35)),
           child: AppTextField(
             keyboardType: TextInputType.name,
-            label: 'Phone Number',
+            hint: 'Phone Number',
             onSaved: (v) {},
             validator: (v) {},
           ),

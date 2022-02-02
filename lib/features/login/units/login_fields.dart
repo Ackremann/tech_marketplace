@@ -10,8 +10,9 @@ class _LogInFields extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(vertical: sizeFromHeight(context, 20)),
           child: AppTextField(
+            
             keyboardType: TextInputType.name,
-            label: 'Email',
+            hint: 'Email',
             onSaved: (v) {},
             validator: (v) {},
           ),
@@ -20,7 +21,7 @@ class _LogInFields extends StatelessWidget {
           padding: EdgeInsets.only(bottom: sizeFromHeight(context, 10)),
           child: AppTextField(
             keyboardType: TextInputType.name,
-            label: 'Password',
+            hint: 'Password',
             onSaved: (v) {},
             validator: (v) {},
           ),

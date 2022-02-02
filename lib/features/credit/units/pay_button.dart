@@ -11,7 +11,13 @@ class _PayButton extends StatelessWidget {
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
             fixedSize: Size(sizeFromWidth(context, 1.2), 40)),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(PageRouteBuilder(
+            opaque: false,
+            pageBuilder: (context, animation, secondaryAnimation) =>
+                const OrderValidateView(),
+          ));
+        },
         child: const Text('Pay'),
       ),
     );
